@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".CallFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/tv_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form Panggilan"
+        android:textSize="16dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/et_nomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_judul"
+        android:layout_margin="20dp"
+        android:paddingTop="10dp"
+        android:hint="Nomor telepon"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        android:layout_below="@id/et_nomor"/>
+
+</RelativeLayout>
